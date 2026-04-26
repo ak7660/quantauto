@@ -193,6 +193,33 @@ flowchart TD
     K --> L[Performance Metrics]
     K --> M[Plots and Reports]
 ```
+### Project Structure
+```
+quantauto/
+├── quantauto/                # Main package
+│   ├── __init__.py
+│   ├── py.typed              # Type hints marker
+│   ├── backtesting/          # Backtesting engine
+│   ├── data/                 # Data schema and validation
+│   ├── experiments/          # Experiment tracking
+│   ├── features/             # Feature engineering
+│   ├── labels/               # Label generation
+│   ├── models/               # ML model framework
+│   ├── utils/                # Utility functions
+│   ├── validation/           # Walk-forward validation
+│   └── workflows/            # Automated workflows
+├── examples/                 # Example notebooks
+│   ├── classification.ipynb
+│   ├── ranking.ipynb
+│   ├── regression.ipynb
+│   └── test.py
+├── assets/                   # Assets (images, logos)
+│   └── quantauto-logo.png
+├── setup.py                  # Setup configuration
+├── pyproject.toml            # Project metadata and dependencies
+├── README.md                 # Documentation
+└── LICENSE                   # License file
+```
 
 ### Framework Modules
 
