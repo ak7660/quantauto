@@ -231,6 +231,30 @@ quantauto/
 - `quantauto.backtesting`: Converts predictions into positions and evaluates trading performance.
 - `quantauto.workflows`: Provides the high-level `run_auto()` pipeline.
 
+## Lines of Code
+
+The table below was produced by `loc_count.py` (run from the repo root with `python loc_count.py`).  
+**Data files, images, configuration files, documentation, and Jupyter notebook outputs are all excluded.**  
+Only code cells inside notebooks are counted; markdown cells and cell outputs are ignored.
+
+| Category | Files | Total lines | Blank | Comments | **Code lines** |
+|---|---|---|---|---|---|
+| Python source (`*.py`) | 49 | 7,043 | 935 | 73 | **6,035** |
+| Jupyter notebooks – code cells only (`*.ipynb`) | 3 | 129 | 19 | 0 | **110** |
+| **Grand total** | **52** | **7,172** | **954** | **73** | **6,145** |
+
+### Methodology
+
+1. All `*.py` files under the repository root are collected (hidden directories such as `.git` are skipped).
+2. For every `*.py` file each line is classified as:
+   - **Blank** – empty or whitespace-only.
+   - **Comment** – first non-whitespace character is `#`.
+   - **Code** – everything else.
+3. For every `*.ipynb` file only **code cells** are read; markdown cells and all cell outputs (stdout, stderr, rich outputs, etc.) are discarded entirely.  The remaining source lines are classified with the same blank / comment / code rules.
+4. The *lines of code* figure is the sum of **code** lines across Python files and notebook code cells.
+
+To reproduce: `python loc_count.py`
+
 ## Status
 
 QuantAuto is currently in early public development. APIs may change as the package moves toward a stable release.
